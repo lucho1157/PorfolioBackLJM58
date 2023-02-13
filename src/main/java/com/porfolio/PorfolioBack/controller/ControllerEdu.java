@@ -19,7 +19,7 @@ public class ControllerEdu {
     @Autowired
     private ISchoolsService educServ;
     
-    @PostMapping ("/new/educacion")
+    @PostMapping ("/new/educacions")
     public String agregarEducacion (@RequestBody Schools educa) {
         educServ.crearEducacion(educa);
         return "La Educación fue agregada correctamente";
